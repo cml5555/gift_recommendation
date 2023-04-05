@@ -1,5 +1,5 @@
 {
-  "name": "car_rental_system",
+  "name": "gift_recommendation_system",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
+    "echarts": "^5.4.2",
     "element-ui": "^2.13.2",
     "less-loader": "^6.2.0",
     "mockjs": "^1.1.0",

@@ -1,4 +1,4 @@
-# car_rental_system
+# gift_recommendation_system
 
 ## Project setup
 ```
