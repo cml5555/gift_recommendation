@@ -8,6 +8,7 @@ export default new Vuex.Store({
         isCollapse: false,    //侧边栏收缩状态，true为收起来，false为打开
         test: 666
     },
+    
     mutations: {    //改变state状态值
         changeisCollapse(state) {
             state.isCollapse = !state.isCollapse   //改变收缩状态
