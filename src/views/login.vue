@@ -43,7 +43,7 @@ export default {
       }).then(res => {
         if (res.status === 200) {
           if (res.data.code === 200) {
-            sessionStorage.setItem("user", JSON.stringify(res.data.data.token));
+            sessionStorage.setItem("token", JSON.stringify(res.data.data.token));
             this.$message({
               type: "success",
               message: "登录成功！",

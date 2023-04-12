@@ -7,7 +7,7 @@
     <div class="navbar-right">
       <div  @click="$router.push('/')">返回首页</div>
       <div @click="$router.push('/orders')">我的订单</div>
-      <div @click="$router.push('/')">购物车</div>
+      <div @click="$router.push('/cart')">购物车</div>
       <div @click="$router.push('/')">消费者权益</div>
     </div>
   </div>

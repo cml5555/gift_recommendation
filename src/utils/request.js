@@ -7,16 +7,13 @@ const request = axios.create({
   timeout:5000  //请求超时毫秒数
 })
 
-//请求路经http://localhost:8080/db.json
-// request.get('/db.json').then(response => {
-//   const data = response.data;
-//   console.log(data);
-// })
-
 //第一个request是上面定义的对象,自定义拦截器
 //请求拦截器
 request.interceptors.request.use(config=>{
   //请求拦截
+  const token = JSON.parse(sessionStorage.getItem("token"));
+  console.log(token,"token")
+  config.headers['token'] = token;
   return config
 },error =>{
   //出现异常

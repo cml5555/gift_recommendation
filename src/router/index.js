@@ -28,18 +28,35 @@ const routes = [
                 name: 'Order',
                 component: () => import('@/views/Orders/Orders.vue'),
             },
+            {
+                path: '/login',
+                name: 'Login',
+                component: Login
+            },
+            {
+                path: '/register',
+                name: 'Register',
+                component: Register
+            },
+            {
+                path: '/detail',
+                name: 'detail',
+                component: () => import('@/views/Goods/Detail.vue'),
+            },
+            {
+                path: '/cart',
+                name: 'cart',
+                component: () => import('@/views/Cart/Cart.vue'),
+            },
+            {
+                path: '/paySuccess',
+                name: 'paySuccess',
+                component: () => import('@/views/PaySuccess/PaySuccess.vue'),
+            },
         ]
     },
-    {
-        path: '/login',
-        name: 'Login',
-        component: Login
-    },
-    {
-        path: '/register',
-        name: 'Register',
-        component: Register
-    },
+
+
 ]
 
 const router = new VueRouter({
